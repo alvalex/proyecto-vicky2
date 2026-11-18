@@ -1,0 +1,277 @@
+/* =========================================
+   1. CONFIGURACIÓN GENERAL Y VARIABLES
+   ========================================= */
+:root {
+    --bg-fondo: #f7f9f8;       /* Blanco humo muy suave (cansa menos la vista) */
+    --bg-tarjeta: #ffffff;     /* Blanco puro para destacar el contenido */
+    --texto-principal: #2c3531;/* Gris carbón oscuro (más elegante que el negro puro) */
+    --texto-suave: #5c6b64;    /* Gris verdoso para detalles secundarios */
+    --acento: #2d5a4c;         /* Verde bosque sobrio y elegante */
+    --acento-hover: #1e3f35;   /* Tono más oscuro al pasar el mouse */
+    --borde-sutil: #e2e8e5;    /* Línea divisoria casi invisible */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-fondo);
+    color: var(--texto-principal);
+    line-height: 1.7; /* Espaciado entre líneas para que sea muy cómodo de leer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================================
+   2. ENCABEZADO Y NAVEGACIÓN (HEADER)
+   ========================================= */
+header {
+    background-color: var(--bg-tarjeta);
+    border-bottom: 1px solid var(--borde-sutil);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--acento);
+    letter-spacing: -0.5px;
+    margin-bottom: 0.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio limpio entre enlaces, sin necesidad de barras "|" */
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto-suave);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    color: var(--acento);
+    background-color: #eef3f1; /* Fondo sutil al pasar el cursor */
+}
+
+/* =========================================
+   3. CONTENIDO PRINCIPAL (MAIN Y SECTION)
+   ========================================= */
+main {
+    flex: 1; /* Empuja el footer hacia abajo si hay poco contenido */
+    width: 100%;
+    max-width: 850px; /* Evita que las líneas de texto sean eternas en pantallas grandes */
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background-color: var(--bg-tarjeta);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--borde-sutil);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Sombra ultra ligera para dar profundidad */
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: var(--acento);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eef3f1;
+}
+
+section h3 {
+    font-size: 1.15rem;
+    color: var(--texto-principal);
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+section dt {
+    font-size: 1.15rem;
+    color: var(--texto-principal);
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    color: var(--texto-principal);
+}
+
+/* Listas limpias */
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+li::marker {
+    color: var(--acento); /* Las viñetas toman el color elegante principal */
+}
+
+/* =========================================
+   4. PIE DE PÁGINA (FOOTER)
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 1.8rem 1rem;
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--borde-sutil);
+    background-color: var(--bg-tarjeta);
+    margin-top: auto;
+}
+
+    <!-- SECCIÓN DE imagenes -->
+
+
+.services {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 1.8rem;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .services-subtitle {
+            color: #64748b;
+            margin-bottom: 3rem;
+            font-size: 0.95rem;
+        }
+
+        .grid-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+        }
+
+        .card-body h3 {
+            font-size: 1.2rem;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-body p {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        //tabla periodica
+        
+        .tabla-periodica-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.tabla-periodica-container table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.tabla-periodica-container td {
+    border: 1px solid black;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla-periodica-container .alcalino {
+    background-color: #ff9999;
+}
+
+.tabla-periodica-container .alcalinoterreo {
+    background-color: #ffcc99;
+}
+
+.tabla-periodica-container .transicion {
+    background-color: #ffff99;
+}
+
+.tabla-periodica-container .postransicion {
+    background-color: #ccffcc;
+}
+
+.tabla-periodica-container .metaloide {
+    background-color: #99ffcc;
+}
+
+.tabla-periodica-container .nometal {
+    background-color: #99ccff;
+}
+
+.tabla-periodica-container .halogeno {
+    background-color: #cc99ff;
+}
+
+.tabla-periodica-container .gasnoble {
+    background-color: #ff99cc;
+}
+
+.tabla-periodica-container .lantanido {
+    background-color: #ffccff;
+}
+
+.tabla-periodica-container .actinido {
+    background-color: #ffb3b3;
+}
+
+.tabla-periodica-container .vacio {
+    border: none;
+    background-color: white;
+}
+
+.tabla-periodica-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.tabla-periodica-container a:hover {
+    text-decoration: underline;
+}

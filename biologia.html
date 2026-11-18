@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologia</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+        <h1>Biología</h1>
+</header>
+<nav>
+        <a href="index.html" class="boton-volver">Volver al Portal Principal</a>
+</nav>
+<section>
+<p>
+La biología es la ciencia que estudia la vida, sus procesos, estructuras, funciones, evolución y la relación de los seres vivos con su entorno.
+</p>
+</section>
+<section>
+<h2>Ramas principales</h2>
+<ul>
+  <li><strong>Botánica</strong>: estudio de las plantas.</li>
+  <li><strong>Zoología</strong>: estudio de los animales.</li>
+  <li><strong>Microbiología</strong>: estudio de microorganismos.</li>
+  <li><strong>Genética</strong>: estudio de la herencia y variación.</li>
+  <li><strong>Ecología</strong>: estudio de las relaciones entre organismos y su ambiente.</li>
+  <li><strong>Anatomía</strong>: estudio de la estructura de los seres vivos.</li>
+  <li><strong>Fisiología</strong>: estudio de las funciones de los organismos.</li>
+  <li><strong>Evolución</strong>: estudio de los cambios y adaptación de las especies.</li>
+  <li><strong>Biología celular</strong>: estudio de la célula como unidad básica de la vida.</li>
+  <li><strong>Biología molecular</strong>: estudio de procesos biológicos a nivel de moléculas.</li>
+</ul>
+</section>
+<main>
+<section>
+    <h2>Registro de Avistamiento de Campo</h2>
+    <p>Encontraste una nueva especie? registrala!</p>
+
+    <form method="get" action="#">
+        
+        <label for="investigador">Nombre del Investigador:</label><br>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+        <label for="paterno">apellidos:</label><br>
+        <input type="text" name="paterno" id="M"><br><br>
+        <label for="tipo_especie">Tipo de Especie:</label><br>
+        <select name="especie" id="especie" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="planta">Planta</option>
+            <option value="animal">Animal</option>
+            <option value="hongo">Hongo</option>
+        </select><br><br>
+        <label for="color_especie">Color de la especie:</label><br>
+        <input type="color" name="colorEspecie" id="colorEspecie"><br><br>
+        <input type="submit" value="Enviar Datos de Investigación" onclick="alert('¡Datos enviados con éxito para investigación!');"><br>
+        <input type="reset" value="limpiar">
+
+    </form>
+</section>
+</main>
+</body>
+</html>
+
